@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+    <th>emp_name</th>
+    <th>salary</th>
+    <th>pf</th>
+    <th>address</th>
+    <th>experience</th>
+    <th>status</th>
+    </thead>
+    <tbody>
+    {% for y in tbl%}
+    <tr>
+        <td>{{ y.emp_name }}</td>
+        <td>{{ y.salary }}</td>
+        <td>{{ y.pf }}</td>
+        <td>{{ y.address }}</td>
+        <td>{{ y.exp }}</td>
+        <td>{{ y.status }}</td>
+        <td><a href="/update_person/{{ y.id }}">update person</a></td>
+        <td><a href="/delete_person/{{y.id }}">delete_person</a></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

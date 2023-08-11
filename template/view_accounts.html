@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <thead>
+  <th>emp_id</th>
+  <th>name</th>
+  <th>designation</th>
+  <th>salary</th>
+  <th>branch</th>
+  <th>place</th>
+  </thead>
+    <tbody>
+    {% for i in obj %}
+    <tr>
+        <td>{{ i.emp_id }}</td>
+        <td>{{ i.name }}</td>
+        <td>{{ i.desig }}</td>
+        <td>{{ i.salary }}</td>
+        <td>{{ i.branch }}</td>
+        <td>{{ i.place }}</td>
+        <td><a href="/update_accounts/{{i.id}}">update_accounts</a></td>
+        <td><a href="/delete_accounts/{{ i.id}}">delete accounts</a></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/update_staff2/{{ obj.id }}" method="post">
+     {% csrf_token %}
+    <label>emp_id</label>
+    <input type="text" name="id" placeholder="enter the emp_id" value="{{ obj.emp_id }}"><br><br>
+    <label>name:</label>
+    <input type="text" name="name" placeholder="enter the name" value="{{ obj.name }}"><br><br>
+    <label>designation:</label>
+    <input type="text" name="designation" placeholder="enter the designation" value="{{ obj.des }}"><br><br>
+    <label>salary:</label>
+    <input type="number" name="salary" placeholder="enter the salary" value="{{ obj.salary }}"><br><br>
+    <label>email:</label>
+    <input type="email" name="email" placeholder="enter the mail_id" value="{{ obj.email }}"><br><br>
+    <label>phone:</label>
+    <input type="number" name="phno" placeholder="enter the phno" value="{{ obj.phone }}"><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>

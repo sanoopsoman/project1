@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/update_person2/{{ data.id }}" method="post">
+    <label>emp_name:</label>
+    <input type="text" name="name" placeholder="enter the employee name" value="{{ data.emp_name }}"><br>
+    <label>salary:</label>
+    <input type="number" name="no" placeholder="enter the salary" value="{{ data.salary }}"><br><br>
+    <label>pf:</label>
+    <input type="number" name="pf" placeholder="enter the pf" value="{{data.pf }}"><br><br>
+    <label>address:</label>
+    <input type="text" name="adress" placeholder="enter the address" value="{{ data.address }}"><br><br>
+    <label>experience:</label>
+    <input type="number" name="exp" placeholder="enter the experience" value="{{ data.exp }}"><br><br>
+    <label>status:</label>
+    <input type="text" name="status" placeholder="enter the status" value="{{ data.status }}"><br><br>
+
+    <input type="submit">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/add_accounts/" method="post">
+    {% csrf_token %}
+    <label>emp_id</label>
+    <input type="text" name="id" placeholder="enter the emp_id"><br><br>
+    <label>name:</label>
+    <input type="text" name="name" placeholder="enter the name"><br><br>
+    <label>designation:</label>
+    <input type="text" name="designation" placeholder="enter the designation"><br><br>
+    <label>salary:</label>
+    <input type="number" name="salary" placeholder="enter the salary"><br><br>
+    <label>branch:</label>
+    <input type="text" name="branch" placeholder="enter the branch"><br><br>
+    <label>place:</label>
+    <input type="text" name="place" placeholder="enter the place"><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
